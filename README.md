@@ -4,7 +4,7 @@ A full-stack web application for managing student registrations with a modern Re
 
 ## 📄 Project Documentation
 
-[📘 View Project Working PDF](docs/Project_Working.pdf)
+[📘 View Project Working PDF](docs/SRS1.pdf)
 
 ## 🎯 Overview
 
