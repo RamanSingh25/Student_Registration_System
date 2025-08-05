@@ -175,7 +175,7 @@ The system captures comprehensive student information:
 |----------|-------------|---------|
 | `PORT` | Backend server port | 5000 |
 | `NODE_ENV` | Environment mode | development |
-| `MONGODB_URI` | MongoDB connection string | mongodb://localhost:27017/student-registration |
+| `MONGODB_URI` | MongoDB connection string | mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<database>?retryWrites=true&w=majority |
 | `CORS_ORIGIN` | Allowed CORS origin | http://localhost:5173 |
 
 ### Development Scripts
