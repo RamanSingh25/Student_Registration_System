@@ -1,0 +1,427 @@
+/* Material Design Theme for Student Registration Form */
+
+.material-form-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.material-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.material-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+.material-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.material-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+}
+
+.material-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.material-title {
+  font-size: 28px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.5px;
+}
+
+.material-subtitle {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.material-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Form Sections */
+.form-section {
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid #e0e0e0;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin: 0 0 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-title::before {
+  content: '';
+  width: 4px;
+  height: 18px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 2px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.material-input-group {
+  position: relative;
+}
+
+.material-input-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.material-input-wrapper {
+  position: relative;
+}
+
+.material-input,
+.material-input select,
+.material-input[type="date"] {
+  width: 100%;
+  padding: 16px 0 8px 0;
+  border: none;
+  border-bottom: 2px solid #e0e0e0;
+  background: transparent;
+  font-size: 16px;
+  color: white !important;
+  transition: all 0.3s ease;
+  outline: none;
+  resize: none;
+}
+
+.material-input:focus {
+  border-bottom-color: #667eea;
+}
+
+.material-input:focus + .material-label,
+.material-input:not(:placeholder-shown) + .material-label,
+.material-input:valid + .material-label {
+  transform: translateY(-20px) scale(0.85);
+  color: #667eea;
+}
+
+.material-label {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  font-size: 16px;
+  color: #ccc;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  transform-origin: left top;
+}
+
+.material-input-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  transition: width 0.3s ease;
+}
+
+.material-input:focus ~ .material-input-underline {
+  width: 100%;
+}
+
+/* Select dropdown styling */
+.material-input[type="date"],
+.material-input select {
+  cursor: pointer;
+  background: transparent;
+  color: white !important;
+}
+
+.material-input select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 16px;
+  padding-right: 32px;
+}
+
+.material-input select option {
+  color: #fff;
+  background: #222;
+}
+
+.material-input select option[disabled] {
+  color: #999;
+}
+
+/* Textarea specific styling */
+.material-textarea {
+  min-height: 80px;
+  line-height: 1.5;
+  padding-top: 20px;
+  color: white !important;
+}
+
+.material-textarea + .material-label {
+  top: 20px;
+}
+
+.material-textarea:focus + .material-label,
+.material-textarea:not(:placeholder-shown) + .material-label {
+  transform: translateY(-30px) scale(0.85);
+}
+
+.material-button {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+}
+
+.material-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+}
+
+.material-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.material-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.material-button.loading {
+  pointer-events: none;
+}
+
+.button-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.material-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.material-message {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  animation: slideIn 0.3s ease;
+}
+
+.material-message.success {
+  background: #e8f5e8;
+  color: #2e7d32;
+  border: 1px solid #c8e6c9;
+}
+
+.material-message.error {
+  background: #ffebee;
+  color: #c62828;
+  border: 1px solid #ffcdd2;
+}
+
+.message-icon {
+  display: flex;
+  align-items: center;
+}
+
+.message-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .material-form-container {
+    padding: 16px;
+  }
+  
+  .material-card {
+    padding: 24px;
+    max-height: 90vh;
+  }
+  
+  .material-title {
+    font-size: 24px;
+  }
+  
+  .material-form {
+    gap: 24px;
+  }
+  
+  .form-section {
+    padding: 20px;
+  }
+  
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .material-button {
+    padding: 14px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .material-form-container {
+    padding: 12px;
+  }
+  
+  .material-card {
+    padding: 20px;
+  }
+  
+  .form-section {
+    padding: 16px;
+  }
+  
+  .section-title {
+    font-size: 16px;
+  }
+}
+
+/* Focus styles for accessibility */
+.material-input:focus {
+  outline: none;
+}
+
+.material-button:focus {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .material-card {
+    background: #1a1a1a;
+    color: white;
+  }
+  
+  .form-section {
+    background: #2a2a2a;
+    border-color: #404040;
+  }
+  
+  .material-title {
+    color: white;
+  }
+  
+  .section-title {
+    color: white;
+  }
+  
+  .material-subtitle {
+    color: #ccc;
+  }
+  
+  .material-input,
+  .material-input select,
+  .material-input[type="date"] {
+    color: white !important;
+  }
+  
+  .material-input select option {
+    color: white;
+    background: #2a2a2a;
+  }
+  
+  .material-input select option[disabled] {
+    color: #666;
+  }
+  
+  .material-label {
+    color: #ccc;
+  }
+} 
