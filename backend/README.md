@@ -1,4 +1,4 @@
-# Student Registration Backend API
+# Student Registration System
 
 A Node.js/Express backend API for the Student Registration System with MongoDB database.
 
@@ -90,7 +90,7 @@ The server will start on `http://localhost:5000`
 |----------|-------------|---------|
 | `PORT` | Server port | 5000 |
 | `NODE_ENV` | Environment mode | development |
-| `MONGODB_URI` | MongoDB connection string | mongodb://localhost:27017/student-registration |
+| `MONGODB_URI` | MongoDB connection string
 | `CORS_ORIGIN` | Allowed CORS origin | http://localhost:5173 |
 
 ### Database Schema
