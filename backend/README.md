@@ -30,7 +30,7 @@ A Node.js/Express backend API for the Student Registration System with MongoDB d
    ```env
    PORT=5000
    NODE_ENV=development
-   MONGODB_URI=mongodb://localhost:27017/student-registration
+   MONGODB_URI=
    CORS_ORIGIN=http://localhost:5173
    ```
 
