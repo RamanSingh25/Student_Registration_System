@@ -1,5 +1,7 @@
 # Student Registration System
 
+View Project Presentation here : docs/SRS1.pdf
+
 A full-stack web application for managing student registrations with a modern React frontend and Node.js/Express backend API.
 
 ## 🎯 Overview
